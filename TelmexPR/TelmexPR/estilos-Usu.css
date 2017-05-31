@@ -1,0 +1,44 @@
+﻿body {
+    margin:0px;
+    padding:0px;
+    background: url('../image/paisaje3.jpg') no-repeat fixed center; /* Muestra imagen de fondo */
+	/* Indicamos que no se repetira */
+	background-size:cover; /* Encajamos la imagen al 100% del ancho */
+}
+
+.contenedor {
+	    width: 91%;
+	    max-width:1250px;
+	    margin:auto;
+        text-align:justify;
+        }
+        article {
+        width: 90%;
+	    max-width:1250px;
+	    background: rgba(20,20,20, 0.55); /*background:rgba(24,8,33,.9);*/
+	    padding:20px;
+	    margin:20px 0;
+	    color:#fff; /*color de la letra id_usuario etc*/
+	    /*box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);*/
+        font-family:Arial;
+        font-size:15px;
+        
+        }
+        /*article h2 {
+	    color:#fff;
+        }*/
+/*article hr {
+	background:#229706;
+	height:5px; raya <hr>
+	border:none;
+}*/
+ 
+/*article p {
+	line-height: 25px;
+    font-family:Arial;
+    font-size:2em;
+}*/
+ 
+/*article h2, article p, article hr {
+	margin-bottom: 20px;
+}*/

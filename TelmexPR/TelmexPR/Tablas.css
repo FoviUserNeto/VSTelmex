@@ -1,0 +1,12 @@
+﻿.tablaConBordes
+{ 
+text-align:left;
+border-color : #0094ff;/*#B0C4DE;*/ /*LightSteelBlue*/
+border-bottom-width:1px;
+border-left-width:1px;
+border-right-width:1px;
+border-top-width:1px;
+}
+
+body {
+}

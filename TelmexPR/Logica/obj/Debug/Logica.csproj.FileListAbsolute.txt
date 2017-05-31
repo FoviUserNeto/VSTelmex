@@ -1,0 +1,7 @@
+C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\Logica\bin\Debug\Logica.dll
+C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\Logica\bin\Debug\Logica.pdb
+C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\Logica\bin\Debug\Datos.dll
+C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\Logica\bin\Debug\Datos.pdb
+C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\Logica\obj\Debug\Logica.dll
+C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\Logica\obj\Debug\Logica.pdb
