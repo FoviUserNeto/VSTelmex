@@ -2,16 +2,68 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-</head>
+<html lang="en">
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<meta charset="utf-8">
+		<title>Ordenes</title>
+		<link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="iconic.css" media="screen" rel="stylesheet" type="text/css" />
+		<script src="prefix-free.js"></script>
+	</head>
+
 <body>
-    <form id="form1" runat="server">
-    <div>
-    
-    </div>
-    </form>
+	<div class="wrap">
+	
+	<nav>
+		<ul class="menu">
+			<li><a href="#"><span class="iconic home"></span> Inicio</a></li>
+			<li><a href="Ordenes.aspx"><span class="iconic plus-alt"></span> Ordenes</a>
+				<ul>
+					<li><a href="Produccion.aspx">Producción</a></li>
+					<li><a href="Pendientes.aspx">Pendientes</a></li>
+                    <li><a href="Prioridad.aspx">Prioridad</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><span class="iconic magnifying-glass"></span> Reportes</a>
+				<ul>
+					<li><a href="#">Reporte de Producción</a></li>
+					<li><a href="#">Reporte de Pendientes</a></li>
+					<li><a href="#">Reporte de Empleados</a></li>
+					<!--<li><a href="#">Copyrighting</a></li>-->
+				</ul>
+			</li>
+			<li><a href="#"><span class="iconic map-pin"></span> Configuración</a>
+				<ul>
+					<li><a href="Trabajador.aspx">Trabajador</a></li>
+					<li><a href="Usuario.aspx">Usuarios</a></li>
+                    <li><a href="#">Generar una copia de seguridad</a></li>
+                    <li><a href="#">Restaurar copia de seguridad</a></li>
+				
+				</ul>
+			</li>
+			<li><a href="#"><span class="iconic mail"></span> Utilidades</a>
+				<ul>
+					<li><a href="http://www.Google.com/" target="_blank">Navegador</a></li>
+					<li><a href="#">Calculadora</a></li>
+                    <li><a href="#">Bloc de Notas</a></li>
+					<li><a href="#">Teclado</a></li>
+                    s
+				</ul>
+			</li>
+            <li><a href="#"><span class="iconic mail"></span> Accesos Rápidos</a>
+				<ul>
+					<li><a href="Login.aspx">Cerrar Sesión</a></li>
+					<li><a href="http://www.Facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="http://www.Hotmail.com/" target="_blank">Email</a></li>
+					<li><a href="http://www.Youtube.com/" target="_blank">Youtube</a></li>
+                    <li><a href="http://www.Twitter.com/" target="_blank">Twitter</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="clearfix"></div>
+	</nav>
+	</div>
 </body>
+
 </html>

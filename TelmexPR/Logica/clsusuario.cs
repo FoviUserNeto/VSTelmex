@@ -11,7 +11,7 @@ namespace Logica
 {
     public class clsusuario
     {
-         public string nombreUsuario;
+        public string nombreUsuario;
         public string cargo;
         public string usuario;
         public string contraseña;

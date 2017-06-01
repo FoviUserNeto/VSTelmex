@@ -127,11 +127,17 @@
     <Content Include="image\stock_icon_v.3.png" />
     <Content Include="image\user.ico" />
     <Content Include="image\usuario.png" />
+    <Content Include="img\denim.png" />
+    <Content Include="img\light_alu.png" />
     <Content Include="Inicio.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Ordenes.aspx" />
+    <Content Include="Pendientes.aspx" />
     <Content Include="prefix-free.js" />
+    <Content Include="Produccion.aspx" />
     <Content Include="style.css" />
     <Content Include="Tablas.css" />
+    <Content Include="Trabajador.aspx" />
     <Content Include="Usuario.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -150,7 +156,35 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Ordenes.aspx.cs">
+      <DependentUpon>Ordenes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ordenes.aspx.designer.cs">
+      <DependentUpon>Ordenes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pendientes.aspx.cs">
+      <DependentUpon>Pendientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pendientes.aspx.designer.cs">
+      <DependentUpon>Pendientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion.aspx.cs">
+      <DependentUpon>Produccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Produccion.aspx.designer.cs">
+      <DependentUpon>Produccion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trabajador.aspx.cs">
+      <DependentUpon>Trabajador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trabajador.aspx.designer.cs">
+      <DependentUpon>Trabajador.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Usuario.aspx.cs">
       <DependentUpon>Usuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -179,7 +213,9 @@
       <Name>Logica</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Reportes\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -43,6 +43,7 @@
     <Compile Include="clsPendientes.cs" />
     <Compile Include="clsprioridad.cs" />
     <Compile Include="clsproduccion.cs" />
+    <Compile Include="clstrabajador.cs" />
     <Compile Include="clsusuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

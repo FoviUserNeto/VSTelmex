@@ -14,6 +14,8 @@ namespace Logica
         public string cadena;
         public string ID_PENDIENTE;
         public string ID_USUARIO = clslogueo.idUsuario.ToString();
+        public string ID_TRABAJADOR;
+        public string ID_PRIORIDAD;
         public string FOLIO;
         public string EXPEDIENTE;
         public string NOMBRE_TECNICO;
@@ -60,6 +62,8 @@ namespace Logica
             cmd.CommandText = "PENDIENTES_I";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@ID_USUARIO", ID_USUARIO);
+            cmd.Parameters.AddWithValue("@ID_TRABAJADOR", ID_TRABAJADOR);
+            cmd.Parameters.AddWithValue("@ID_PRIORIDAD", ID_PRIORIDAD);
             cmd.Parameters.AddWithValue("@FOLIO", FOLIO);
             cmd.Parameters.AddWithValue("@EXPEDIENTE", EXPEDIENTE);
             cmd.Parameters.AddWithValue("@NOMBRE_TECNICO", NOMBRE_TECNICO);
@@ -116,10 +120,12 @@ namespace Logica
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.CommandText = "PLANTILLA_U";
+            cmd.CommandText = "PENDIENTES_U";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@ID_PENDIENTE", ID_PENDIENTE);
             cmd.Parameters.AddWithValue("@ID_USUARIO", ID_USUARIO);
+            cmd.Parameters.AddWithValue("@ID_TRABAJADOR", ID_TRABAJADOR);
+            cmd.Parameters.AddWithValue("@ID_PRIORIDAD", ID_PRIORIDAD);
             cmd.Parameters.AddWithValue("@FOLIO", FOLIO);
             cmd.Parameters.AddWithValue("@EXPEDIENTE", EXPEDIENTE);
             cmd.Parameters.AddWithValue("@NOMBRE_TECNICO", NOMBRE_TECNICO);
@@ -155,20 +161,20 @@ namespace Logica
             cmd.Parameters.AddWithValue("@NUMERO_CELULAR", NUMERO_CELULAR);
             conn.EjecutarComando(cmd);
         }
-        public DataTable consultaPorClave()
+        public DataTable consultaPorExpediente()
         {
             clsconexion conn = new clsconexion();
             SqlCommand cmd = new SqlCommand();
             DataTable DT;
 
-            cmd.CommandText = "PLANTILLA_EXPEDIENTE";
+            cmd.CommandText = "PENDIENTE_EXPEDIENTE";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@EXPENDIENTE", EXPEDIENTE);
 
             DT = conn.GetDTable(cmd);
             return DT;
         }
-        public DataTable consultaPlantilla()
+        public DataTable consultaPendiente()
         {
             clsconexion conn = new clsconexion();
             SqlCommand cmd = new SqlCommand();
