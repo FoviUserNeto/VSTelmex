@@ -1,4 +1,3 @@
-C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
 C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\Datos\bin\Debug\Datos.dll
 C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\Datos\bin\Debug\Datos.pdb
 C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\Datos\obj\Debug\Datos.dll

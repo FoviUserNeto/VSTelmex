@@ -7,7 +7,6 @@ using Datos;
 using System.Data;
 using System.Data.SqlClient;
 
-
 namespace Logica
 {
     public class clstrabajador
@@ -98,4 +97,4 @@ namespace Logica
     }
 
     }
-}
+

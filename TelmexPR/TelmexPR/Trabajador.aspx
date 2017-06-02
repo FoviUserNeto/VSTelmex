@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Usuarios</title>
+    <title>Trabajador</title>
     <link rel="stylesheet" href="estilos-Usu.css" />
     <link href="Estilos/bootstrap.css" rel="stylesheet" />    
     <style type="text/css">
@@ -67,14 +67,18 @@
             <tr>
                 <td colspan="2" style="text-align: center">
                     <asp:Panel ID="PnGrid" runat="server">
-                        <asp:GridView ID="gvUsuarios" runat="server" CellPadding="4" ForeColor="#333333" Width="100%" OnSelectedIndexChanged="gvOcurrencias_SelectedIndexChanged" AutoGenerateColumns="False" AutoGenerateSelectButton="True" BackColor="White" BorderStyle="None" BorderWidth="1px" DataKeyNames="ID_USUARIO">
+                        <asp:GridView ID="gvTrabajador" runat="server" CellPadding="4" ForeColor="#333333" Width="100%" OnSelectedIndexChanged="gvTrabajador_SelectedIndexChanged" AutoGenerateColumns="False" AutoGenerateSelectButton="True" BackColor="White" BorderStyle="None" BorderWidth="1px" DataKeyNames="ID_USUARIO">
                             <AlternatingRowStyle BackColor="White" />
                             <Columns>
-                                <asp:BoundField DataField="ID_USUARIO" HeaderText="Clave de Usuario" Visible="False" />
-                                <asp:BoundField DataField="NOMBRE" HeaderText="Nombre de Usuario" HtmlEncode="False" />
-                                <asp:BoundField DataField="CARGO" HeaderText="Cargo" HtmlEncode="False" />
-                                <asp:BoundField DataField="USUARIO" HeaderText="Usuario" HtmlEncode="False" />
-                                <asp:BoundField DataField="CONTRASEÑA" HeaderText="Contraseña" Visible="False" HtmlEncode="False" />
+                                <asp:BoundField DataField="ID_TRABAJADOR" HeaderText="Clave de Trabajador" Visible="False" />
+                                <asp:BoundField DataField="EXPEDIENTE" HeaderText="Expediente" HtmlEncode="False" />
+                                <asp:BoundField DataField="NOMBRE" HeaderText="Nombre" HtmlEncode="False" />
+                                <asp:BoundField DataField="APELLIDOS" HeaderText="Apellidos" HtmlEncode="False" />
+                                <asp:BoundField DataField="SEXO" HeaderText="Sexo" Visible="False" HtmlEncode="False" />
+                                <asp:BoundField DataField="FECHANAC" HeaderText="Fecha de Nacimiento" />
+                                <asp:BoundField DataField="DIRECCION" HeaderText="Dirección" />
+                                <asp:BoundField DataField="TELEFONO" HeaderText="Teléfono" />
+                                <asp:BoundField DataField="EMAIL" HeaderText="Email" />
                                 <asp:TemplateField HeaderText="Editar">
                                     <ItemTemplate>
                                         <asp:ImageButton ID="btnEditar" runat="server" Height="20px" ImageUrl="~/image/modif.png" OnClick="btnEditar_Click" Width="30px" />

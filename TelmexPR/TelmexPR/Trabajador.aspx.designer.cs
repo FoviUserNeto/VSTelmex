@@ -103,13 +103,13 @@ namespace TelmexPR {
         protected global::System.Web.UI.WebControls.Panel PnGrid;
         
         /// <summary>
-        /// Control gvUsuarios.
+        /// Control gvTrabajador.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvUsuarios;
+        protected global::System.Web.UI.WebControls.GridView gvTrabajador;
         
         /// <summary>
         /// Control PnGuardar.

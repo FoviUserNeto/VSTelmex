@@ -1,10 +1,10 @@
-C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\TelmexPR\obj\Debug\TelmexPR.csprojResolveAssemblyReference.cache
 C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\TelmexPR\bin\TelmexPR.dll
 C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\TelmexPR\bin\TelmexPR.pdb
+C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\TelmexPR\bin\AjaxControlToolkit.dll
 C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\TelmexPR\bin\Logica.dll
 C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\TelmexPR\bin\Datos.dll
 C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\TelmexPR\bin\Logica.pdb
 C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\TelmexPR\bin\Datos.pdb
+C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\TelmexPR\obj\Debug\TelmexPR.csprojResolveAssemblyReference.cache
 C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\TelmexPR\obj\Debug\TelmexPR.dll
 C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\TelmexPR\obj\Debug\TelmexPR.pdb
-C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\TelmexPR\bin\AjaxControlToolkit.dll

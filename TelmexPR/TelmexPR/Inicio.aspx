@@ -48,7 +48,7 @@
 					<li><a href="#">Calculadora</a></li>
                     <li><a href="#">Bloc de Notas</a></li>
 					<li><a href="#">Teclado</a></li>
-                    s
+                    
 				</ul>
 			</li>
             <li><a href="#"><span class="iconic mail"></span> Accesos Rápidos</a>

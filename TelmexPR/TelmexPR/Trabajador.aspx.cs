@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Logica;
 using System.Data;
+using AjaxControlToolkit;
 
 namespace TelmexPR
 {
@@ -24,53 +25,53 @@ namespace TelmexPR
             DataTable dt;
 
             dt = obj.consultaUsuarios();
-            this.gvUsuarios.DataSource = dt;
-            this.gvUsuarios.DataBind();
+            this.gvTrabajador.DataSource = dt;
+            this.gvTrabajador.DataBind();
         }
 
-        protected void gvOcurrencias_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            txtNombre.Text = gvUsuarios.SelectedRow.Cells[2].Text;
-            txtCargo.Text = gvUsuarios.SelectedRow.Cells[3].Text;
-            txtUsuario.Text = gvUsuarios.SelectedRow.Cells[4].Text;
-            txtContrasena.Text = gvUsuarios.SelectedRow.Cells[5].Text;
-        }
-
-
-
-
+   
         private void limpiar()
         {
             //Cuadros de texto
             this.txtNombre.Text = "";
-            this.txtCargo.Text = "";
-            this.txtUsuario.Text = "";
-            this.txtContrasena.Text = "";
-            this.txtRepetir.Text = "";
+            this.txtExpediente.Text = "";
+            this.txtApellidos.Text = "";
+            this.txtFecha.Text = "";
+            this.txtDireccion.Text = "";
+            this.txtTelefono.Text = "";
+            this.txtEmail.Text = "";
 
         }
 
 
         protected void btnGuardar_Click1(object sender, ImageClickEventArgs e)
         {
-            clsusuario obj = new clsusuario();
-            obj.nombreUsuario = this.txtNombre.Text;
-            obj.cargo = this.txtCargo.Text;
-            obj.usuario = this.txtUsuario.Text;
-            obj.contraseña = this.txtContrasena.Text;
-            if (this.gvUsuarios.SelectedIndex == -1)
+            clstrabajador obj = new clstrabajador();
+            obj.EXPEDIENTE = this.txtExpediente.Text;
+            obj.NOMBRE = this.txtNombre.Text;
+            obj.APELLIDOS = this.txtApellidos.Text;
+            obj.SEXO = this.ddwSexo.Text;
+            obj.FECHANAC = this.txtFecha.Text;
+            obj.DIRECCION = this.txtDireccion.Text;
+            obj.TELEFONO = this.txtTelefono.Text;
+            obj.EMAIL = this.txtEmail.Text;
+            if (this.gvTrabajador.SelectedIndex == -1)
             {
                 obj.Insertar();
             }
             else
             {
-                obj.idUsuario = this.gvUsuarios.SelectedValue.ToString();
-                obj.nombreUsuario = this.txtNombre.Text;
-                obj.cargo = this.txtCargo.Text;
-                obj.usuario = this.txtUsuario.Text;
-                obj.contraseña = this.txtContrasena.Text;
+                obj.IDTRABAJADOR = this.gvTrabajador.SelectedValue.ToString();
+                obj.EXPEDIENTE = this.txtExpediente.Text;
+                obj.NOMBRE = this.txtNombre.Text;
+                obj.APELLIDOS = this.txtApellidos.Text;
+                obj.SEXO = this.ddwSexo.Text;
+                obj.FECHANAC = this.txtFecha.Text;
+                obj.DIRECCION = this.txtDireccion.Text;
+                obj.TELEFONO = this.txtTelefono.Text;
+                obj.EMAIL = this.txtEmail.Text;
                 obj.Editar();
-                this.gvUsuarios.SelectedIndex = -1;
+                this.gvTrabajador.SelectedIndex = -1;
             }
 
             llenarTabla();
@@ -91,20 +92,24 @@ namespace TelmexPR
         {
             ImageButton imgBtn = (ImageButton)sender;
             GridViewRow gv = (GridViewRow)imgBtn.NamingContainer;
-            txtNombre.Text = gv.Cells[2].Text;
-            txtCargo.Text = gv.Cells[3].Text;
-            txtUsuario.Text = gv.Cells[4].Text;
-            txtContrasena.Text = gv.Cells[5].Text;
+            txtExpediente.Text = gv.Cells[2].Text;
+            txtNombre.Text = gv.Cells[3].Text;
+            txtApellidos.Text = gv.Cells[4].Text;
+            ddwSexo.Text = gv.Cells[5].Text;
+            txtFecha.Text = gv.Cells[6].Text;
+            txtDireccion.Text = gv.Cells[7].Text;
+            txtTelefono.Text = gv.Cells[8].Text;
+            txtEmail.Text = gv.Cells[9].Text;
             this.ModalPopupExtender1.Show();
 
         }
 
         protected void btnEliminar_Click(object sender, ImageClickEventArgs e)
         {
-            clsusuario obj = new clsusuario();
-            obj.idUsuario = this.gvUsuarios.SelectedValue.ToString();
+            clstrabajador obj = new clstrabajador();
+            obj.IDTRABAJADOR = this.gvTrabajador.SelectedValue.ToString();
             obj.Eliminar();
-            this.gvUsuarios.SelectedIndex = -1;
+            this.gvTrabajador.SelectedIndex = -1;
             llenarTabla();
             limpiar();
 
@@ -130,6 +135,18 @@ namespace TelmexPR
             //obj.cadena = this.txtBuscar.Text;
             //gvUsuarios.DataSource = obj.consultaUsuarios();
             //gvUsuarios.DataBind();
+        }
+
+        protected void gvTrabajador_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtExpediente.Text = gvTrabajador.SelectedRow.Cells[2].Text;
+            txtNombre.Text = gvTrabajador.SelectedRow.Cells[3].Text;
+            txtApellidos.Text = gvTrabajador.SelectedRow.Cells[4].Text;
+            ddwSexo.Text = gvTrabajador.SelectedRow.Cells[5].Text;
+            txtFecha.Text = gvTrabajador.SelectedRow.Cells[6].Text;
+            txtDireccion.Text = gvTrabajador.SelectedRow.Cells[7].Text;
+            txtTelefono.Text = gvTrabajador.SelectedRow.Cells[8].Text;
+            txtEmail.Text = gvTrabajador.SelectedRow.Cells[9].Text;
         }
     }
 }
