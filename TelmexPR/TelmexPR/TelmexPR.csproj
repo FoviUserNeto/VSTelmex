@@ -42,6 +42,7 @@
       <HintPath>..\..\..\..\..\Nestor\Software Realizados Por Nestor Gonzalez\Respaldo IMP\IMPSIASSOPA\packages\AjaxControlToolkit.15.1.4.0\lib\net40\AjaxControlToolkit.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -60,6 +61,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CopiaSeguridad.aspx" />
     <Content Include="css\lavalamp.png" />
     <Content Include="css\layout.css" />
     <Content Include="css\menu.css" />
@@ -110,6 +112,7 @@
     <Content Include="image\Imagen2.jpg" />
     <Content Include="image\Imagen3.png" />
     <Content Include="image\Imagen4.jpg" />
+    <Content Include="image\ImagenFondo.jpg" />
     <Content Include="image\Importar.jpeg" />
     <Content Include="image\impresora.ico" />
     <Content Include="image\light_alu.png" />
@@ -134,7 +137,14 @@
     <Content Include="Ordenes.aspx" />
     <Content Include="Pendientes.aspx" />
     <Content Include="prefix-free.js" />
+    <Content Include="Prioridad.aspx" />
     <Content Include="Produccion.aspx" />
+    <Content Include="Reportes\ReportOrdenes.aspx" />
+    <Content Include="Reportes\ReportPendientes.aspx" />
+    <Content Include="Reportes\ReportPrioridad.aspx" />
+    <Content Include="Reportes\ReportProduccion.aspx" />
+    <Content Include="Reportes\ReportTrabajador.aspx" />
+    <Content Include="RestaurarCopia.aspx" />
     <Content Include="style.css" />
     <Content Include="Tablas.css" />
     <Content Include="Trabajador.aspx" />
@@ -142,6 +152,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CopiaSeguridad.aspx.cs">
+      <DependentUpon>CopiaSeguridad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CopiaSeguridad.aspx.designer.cs">
+      <DependentUpon>CopiaSeguridad.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -170,6 +187,13 @@
     <Compile Include="Pendientes.aspx.designer.cs">
       <DependentUpon>Pendientes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Prioridad.aspx.cs">
+      <DependentUpon>Prioridad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prioridad.aspx.designer.cs">
+      <DependentUpon>Prioridad.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Produccion.aspx.cs">
       <DependentUpon>Produccion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -178,6 +202,53 @@
       <DependentUpon>Produccion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\ReportOrdenes.aspx.cs">
+      <DependentUpon>ReportOrdenes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportOrdenes.aspx.designer.cs">
+      <DependentUpon>ReportOrdenes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportPendientes.aspx.cs">
+      <DependentUpon>ReportPendientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportPendientes.aspx.designer.cs">
+      <DependentUpon>ReportPendientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportPrioridad.aspx.cs">
+      <DependentUpon>ReportPrioridad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportPrioridad.aspx.designer.cs">
+      <DependentUpon>ReportPrioridad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportProduccion.aspx.cs">
+      <DependentUpon>ReportProduccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportProduccion.aspx.designer.cs">
+      <DependentUpon>ReportProduccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportTrabajador.aspx.cs">
+      <DependentUpon>ReportTrabajador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportTrabajador.aspx.designer.cs">
+      <DependentUpon>ReportTrabajador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurarCopia.aspx.cs">
+      <DependentUpon>RestaurarCopia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RestaurarCopia.aspx.designer.cs">
+      <DependentUpon>RestaurarCopia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TelmexOrdenDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TelmexOrdenDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Trabajador.aspx.cs">
       <DependentUpon>Trabajador.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -200,6 +271,17 @@
     <Content Include="fonts\iconic\iconic_stroke.eot" />
     <Content Include="fonts\iconic\iconic_stroke.otf" />
     <Content Include="fonts\iconic\iconic_stroke.ttf" />
+    <Content Include="TelmexOrdenDataSet.xsc">
+      <DependentUpon>TelmexOrdenDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="TelmexOrdenDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TelmexOrdenDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="TelmexOrdenDataSet.xss">
+      <DependentUpon>TelmexOrdenDataSet.xsd</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -214,7 +296,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Reportes\" />
+    <Folder Include="Fuentes\temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reportes\ReportOrdenes.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportPendientes.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportPrioridad.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportProduccion.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportTrabajador.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

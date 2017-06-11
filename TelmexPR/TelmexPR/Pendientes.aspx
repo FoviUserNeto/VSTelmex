@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Plantilla</title>
+    <title>Pendientes</title>
     <link rel="stylesheet" href="estilos-Usu.css">
     <link href="Estilos/bootstrap.css" rel="stylesheet" />
     <style type="text/css">
@@ -47,7 +47,6 @@
         <table class="auto-style1">
             <tr>
                 <td>
-                    <asp:Image ID="Image1" runat="server" Height="36px" ImageAlign="AbsMiddle" ImageUrl="~/image/imp.jpg" Width="149px" />
 &nbsp;<span class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></td>
             </tr>
             <tr>
@@ -62,7 +61,7 @@
                         <table class="auto-style1">
                             <tr>
                                 <td class="auto-style5">
-                                    Plantilla:</td>
+                                    Pendientes:</td>
                                 <td colspan="2">
                                     <asp:FileUpload ID="FilePlantilla" runat="server" style="margin-left: 0px" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

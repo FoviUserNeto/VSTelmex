@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clslogueo.cs" />
+    <Compile Include="clsordenes.cs" />
     <Compile Include="clsPendientes.cs" />
     <Compile Include="clsprioridad.cs" />
     <Compile Include="clsproduccion.cs" />

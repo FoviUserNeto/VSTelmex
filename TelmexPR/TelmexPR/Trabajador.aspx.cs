@@ -24,7 +24,7 @@ namespace TelmexPR
             clstrabajador obj = new clstrabajador();
             DataTable dt;
 
-            dt = obj.consultaUsuarios();
+            dt = obj.consultaTrabajador();
             this.gvTrabajador.DataSource = dt;
             this.gvTrabajador.DataBind();
         }
@@ -96,6 +96,7 @@ namespace TelmexPR
             txtNombre.Text = gv.Cells[3].Text;
             txtApellidos.Text = gv.Cells[4].Text;
             ddwSexo.Text = gv.Cells[5].Text;
+            //txtFecha.Text = gv.Cells[6].Text;
             txtFecha.Text = gv.Cells[6].Text;
             txtDireccion.Text = gv.Cells[7].Text;
             txtTelefono.Text = gv.Cells[8].Text;
@@ -127,14 +128,14 @@ namespace TelmexPR
 
         protected void btnBuscar_Click(object sender, ImageClickEventArgs e)
         {
-            LlenarUsuarios();
+            BuscarTrabajador();
         }
-        private void LlenarUsuarios()
+        private void BuscarTrabajador()
         {
-            //clsUsuarios obj = new clsUsuarios();
-            //obj.cadena = this.txtBuscar.Text;
-            //gvUsuarios.DataSource = obj.consultaUsuarios();
-            //gvUsuarios.DataBind();
+            clstrabajador obj = new clstrabajador();
+            obj.cadena = this.txtBuscar.Text;
+            gvTrabajador.DataSource = obj.consultaTrabajadorFull();
+            gvTrabajador.DataBind();
         }
 
         protected void gvTrabajador_SelectedIndexChanged(object sender, EventArgs e)

@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Plantilla</title>
+    <title>Producción</title>
     <link rel="stylesheet" href="estilos-Usu.css">
     <link href="Estilos/bootstrap.css" rel="stylesheet" />
     <style type="text/css">
@@ -47,7 +47,6 @@
         <table class="auto-style1">
             <tr>
                 <td>
-                    <asp:Image ID="Image1" runat="server" Height="36px" ImageAlign="AbsMiddle" ImageUrl="~/image/imp.jpg" Width="149px" />
 &nbsp;<span class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></td>
             </tr>
             <tr>
@@ -61,10 +60,8 @@
                     <asp:Panel ID="Panel1" runat="server" style="text-align: left">
                         <table class="auto-style1">
                             <tr>
-                                <td class="auto-style5">
-                                    Plantilla:</td>
-                                <td colspan="2">
-                                    <asp:FileUpload ID="FilePlantilla" runat="server" style="margin-left: 0px" />
+                                <td class="auto-style5" colspan="3">
+                                    Producción:<asp:FileUpload ID="FilePlantilla" runat="server" style="margin-left: 0px" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:ImageButton ID="Importar" runat="server" Height="30px" ImageUrl="~/image/Importar.jpeg" OnClick="Importar_Click" Width="40px" />
                                 </td>
@@ -75,9 +72,7 @@
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td class="auto-style5">Buscar:</td>
-                                <td colspan="2">
-                                    <asp:TextBox ID="txtBuscar" runat="server" style="margin-bottom: 1px" Width="150px"></asp:TextBox>
+                                <td class="auto-style5" colspan="3">Buscar:<asp:TextBox ID="txtBuscar" runat="server" style="margin-bottom: 1px" Width="150px"></asp:TextBox>
                                     &nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:ImageButton ID="btnBuscar" runat="server" Height="20px" ImageUrl="~/image/16 (Search).ico" OnClick="btnBuscar_Click" Width="30px" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
@@ -85,10 +80,8 @@
                                     &nbsp;&nbsp;&nbsp;&nbsp;
                                     <ajaxToolkit:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="modalBackground" CancelControlID="btnCancelar" PopupControlID="PnGuardar" TargetControlID="btnNuevo">
                                     </ajaxToolkit:ModalPopupExtender>
-                                    <asp:ImageButton ID="btnImprimir" runat="server" Height="20px" ImageUrl="~/image/impresora.ico" Width="30px" OnClick="btnImprimir_Click" />
+                                    <asp:ImageButton ID="btnImprimir" runat="server" Height="20px" ImageUrl="~/image/impresora.ico" OnClick="btnImprimir_Click" Width="30px" />
                                     &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-                                    
-                                    
                                     <asp:ImageButton ID="btnSalir" runat="server" Height="20px" ImageUrl="~/image/CERRAR.png" OnClick="btnSalir_Click" Width="30px" />
                                 </td>
                             </tr>

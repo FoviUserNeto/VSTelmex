@@ -8,3 +8,5 @@ C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\Te
 C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\TelmexPR\obj\Debug\TelmexPR.csprojResolveAssemblyReference.cache
 C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\TelmexPR\obj\Debug\TelmexPR.dll
 C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\TelmexPR\obj\Debug\TelmexPR.pdb
+C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\TelmexPR\obj\Debug\RdlCompile.cache
+C:\Users\CRIS-DARCHS\Documents\Controlador de Versiones\Repositorios\VSTelmex\TelmexPR\TelmexPR\obj\Debug\RdlCompile.compiled

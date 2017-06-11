@@ -11,6 +11,7 @@ namespace Logica
 {
     public class clstrabajador
     {
+        public string cadena;
         public string IDTRABAJADOR;
         public string EXPEDIENTE;
         public string NOMBRE;
@@ -54,7 +55,7 @@ namespace Logica
 
         cmd.CommandText = "TRABAJADOR_D";
         cmd.CommandType = CommandType.StoredProcedure;
-        cmd.Parameters.AddWithValue("@ID_TRABAJADOR", IDTRABAJADOR);
+        cmd.Parameters.AddWithValue("@IDTRABAJADOR", IDTRABAJADOR);
         conn.EjecutarComando(cmd);
     }
 
@@ -80,7 +81,7 @@ namespace Logica
         conn.EjecutarComando(cmd);
     }
 
-        public DataTable consultaUsuarios()
+        public DataTable consultaTrabajador()
     {
         clsconexion conn = new clsconexion();
         SqlCommand cmd = new SqlCommand();
@@ -92,6 +93,19 @@ namespace Logica
         DT = conn.GetDTable(cmd);
         return DT;
     }
+
+        public DataTable consultaTrabajadorFull()
+        {
+            clsconexion conn = new clsconexion();
+            SqlCommand cmd = new SqlCommand();
+            DataTable DT;
+
+            cmd.CommandText = "TRABAJADOR_BUSC";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@cadena", cadena);
+            DT = conn.GetDTable(cmd);
+            return DT;
+        }
 
         
     }

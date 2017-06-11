@@ -27,9 +27,11 @@
 			</li>
 			<li><a href="#"><span class="iconic magnifying-glass"></span> Reportes</a>
 				<ul>
-					<li><a href="#">Reporte de Producción</a></li>
-					<li><a href="#">Reporte de Pendientes</a></li>
-					<li><a href="#">Reporte de Empleados</a></li>
+					<li><a href="Reportes/ReportProduccion.aspx">Reporte de Producción</a></li>
+					<li><a href="Reportes/ReportPendientes.aspx">Reporte de Pendientes</a></li>
+					<li><a href="Reportes/ReportTrabajador.aspx">Reporte de Empleados</a></li>
+                    <li><a href="Reportes/ReportOrdenes.aspx">Reporte de Ordenes</a></li>
+                    <li><a href="Reportes/ReportPrioridad.aspx">Reporte de Prioridad</a></li>
 					<!--<li><a href="#">Copyrighting</a></li>-->
 				</ul>
 			</li>
@@ -37,8 +39,8 @@
 				<ul>
 					<li><a href="Trabajador.aspx">Trabajador</a></li>
 					<li><a href="Usuario.aspx">Usuarios</a></li>
-                    <li><a href="#">Generar una copia de seguridad</a></li>
-                    <li><a href="#">Restaurar copia de seguridad</a></li>
+                    <li><a href="CopiaSeguriddad.aspx">Generar una copia de seguridad</a></li>
+                    <li><a href="RestaurarCopia">Restaurar copia de seguridad</a></li>
 				
 				</ul>
 			</li>

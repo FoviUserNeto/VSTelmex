@@ -40,15 +40,13 @@
     
         <table class="auto-style1">
             <tr>
-                <td colspan="2" style="text-align: center">LISTADO DE TRABAJADORES</td>
-            </tr>
-            <tr>
-                <td colspan="2" style="text-align: center">&nbsp;</td>
+                <td style="text-align: center">LISTADO DE TRABAJADORES</td>
             </tr>
             <tr>
                 <td style="text-align: center">&nbsp;</td>
-                <td style="text-align: left">
-                    <asp:TextBox ID="txtBuscar" runat="server" style="text-align: right" Width="150px" Visible="False"></asp:TextBox>
+            </tr>
+            <tr>
+                <td style="text-align: left">Buscar:<asp:TextBox ID="txtBuscar" runat="server" style="text-align: right" Width="150px"></asp:TextBox>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:ImageButton ID="btnBuscar" runat="server" Height="20px" ImageUrl="~/image/16 (Search).ico" Width="30px" OnClick="btnBuscar_Click" />
                     &nbsp;&nbsp;&nbsp;&nbsp;
@@ -62,10 +60,10 @@
                                    </td>
             </tr>
             <tr>
-                <td colspan="2" style="text-align: center">&nbsp;</td>
+                <td style="text-align: center">&nbsp;</td>
             </tr>
             <tr>
-                <td colspan="2" style="text-align: center">
+                <td style="text-align: center">
                     <asp:Panel ID="PnGrid" runat="server">
                         <asp:GridView ID="gvTrabajador" runat="server" CellPadding="4" ForeColor="#333333" Width="100%" OnSelectedIndexChanged="gvTrabajador_SelectedIndexChanged" AutoGenerateColumns="False" AutoGenerateSelectButton="True" BackColor="White" BorderStyle="None" BorderWidth="1px" DataKeyNames="ID_USUARIO">
                             <AlternatingRowStyle BackColor="White" />
@@ -74,7 +72,7 @@
                                 <asp:BoundField DataField="EXPEDIENTE" HeaderText="Expediente" HtmlEncode="False" />
                                 <asp:BoundField DataField="NOMBRE" HeaderText="Nombre" HtmlEncode="False" />
                                 <asp:BoundField DataField="APELLIDOS" HeaderText="Apellidos" HtmlEncode="False" />
-                                <asp:BoundField DataField="SEXO" HeaderText="Sexo" Visible="False" HtmlEncode="False" />
+                                <asp:BoundField DataField="SEXO" HeaderText="Sexo" HtmlEncode="False" />
                                 <asp:BoundField DataField="FECHANAC" HeaderText="Fecha de Nacimiento" />
                                 <asp:BoundField DataField="DIRECCION" HeaderText="Dirección" />
                                 <asp:BoundField DataField="TELEFONO" HeaderText="Teléfono" />
@@ -105,18 +103,18 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
+                <td>
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2" colspan="2">
+                <td class="auto-style2">
                     <asp:Panel ID="PnGuardar" runat="server">
                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                         <table class="auto-style1">
                             <tr>
                                 <td class="auto-style16" colspan="3">
                                     <asp:Label ID="Label1" runat="server" Text="Registro"></asp:Label>
-                                    &nbsp;de Usuarios</td>
+                                    &nbsp;de Trabajadores</td>
                             </tr>
                             <tr>
                                 <td class="auto-style16" colspan="3">&nbsp;</td>
@@ -163,7 +161,7 @@
                                 <td class="auto-style11">
                                     Fecha de Nacimiento:</td>
                                 <td class="auto-style13">
-                                    <asp:TextBox ID="txtFecha" runat="server" style="margin-bottom: 1px" Width="250px" TextMode="Password">Vuelva escribir la contraseña</asp:TextBox>
+                                    <asp:TextBox ID="txtFecha" runat="server" style="margin-bottom: 1px" Width="250px"></asp:TextBox>
                                 </td>
                                 <td>
                                     &nbsp;</td>
@@ -171,21 +169,21 @@
                             <tr>
                                 <td class="auto-style11">Dirección:</td>
                                 <td class="auto-style13">
-                                    <asp:TextBox ID="txtDireccion" runat="server" style="margin-bottom: 1px" TextMode="Password" Width="250px">Vuelva escribir la contraseña</asp:TextBox>
+                                    <asp:TextBox ID="txtDireccion" runat="server" style="margin-bottom: 1px" Width="250px"></asp:TextBox>
                                 </td>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
                                 <td class="auto-style11">Teléfono:</td>
                                 <td class="auto-style13">
-                                    <asp:TextBox ID="txtTelefono" runat="server" style="margin-bottom: 1px" TextMode="Password" Width="250px">Vuelva escribir la contraseña</asp:TextBox>
+                                    <asp:TextBox ID="txtTelefono" runat="server" style="margin-bottom: 1px" Width="250px"></asp:TextBox>
                                 </td>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
                                 <td class="auto-style11">Email:</td>
                                 <td class="auto-style13">
-                                    <asp:TextBox ID="txtEmail" runat="server" style="margin-bottom: 1px" TextMode="Password" Width="250px">Vuelva escribir la contraseña</asp:TextBox>
+                                    <asp:TextBox ID="txtEmail" runat="server" style="margin-bottom: 1px" Width="250px"></asp:TextBox>
                                 </td>
                                 <td>&nbsp;</td>
                             </tr>
