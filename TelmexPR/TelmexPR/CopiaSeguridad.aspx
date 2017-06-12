@@ -54,6 +54,10 @@
             <tr>
                 <td class="auto-style2" colspan="2">Generar Backup del Sistema:&nbsp;&nbsp;&nbsp; <asp:Button ID="btnBackup" runat="server" OnClick="btnBackup_Click" OnClientClick="return confirm('Esta seguro que desea realizar un backup del sistema?')" Text="Generador de Copia" Width="182px" />
     
+                &nbsp;&nbsp;&nbsp;&nbsp; Salir:
+    
+        <asp:ImageButton ID="btnPrincipal" runat="server" ImageUrl="~/image/CERRAR.png" OnClick="btnPrincipal_Click" style="text-align: center" Height="30px" Width="40px" />
+    
                 </td>
                 <td>&nbsp;</td>
             </tr>

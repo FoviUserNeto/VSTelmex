@@ -46,6 +46,11 @@ namespace TelmexPR
             }
         }
 
+        protected void btnPrincipal_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("~/Inicio.aspx");
+        }
+
       
         }
     }

@@ -47,6 +47,10 @@
                     <asp:FileUpload ID="FileBackup" runat="server" />
 &nbsp;&nbsp;
                     <asp:Button ID="btnRestaurar" runat="server" OnClick="btnRestaurar_Click" Text="Restaurar Backup" Width="185px" />
+                &nbsp;&nbsp;&nbsp;&nbsp; Salir:
+    
+        <asp:ImageButton ID="btnPrincipal" runat="server" ImageUrl="~/image/CERRAR.png" OnClick="btnPrincipal_Click" style="text-align: center" Height="30px" Width="40px" />
+    
                 </td>
                 <td>&nbsp;</td>
             </tr>

@@ -28,9 +28,14 @@ namespace TelmexPR
 
         protected void btnRestaurar_Click(object sender, EventArgs e)
         {
-            string excelPath = Server.MapPath("~/Fuentes/temp/") + Path.GetFileName(FileBackup.PostedFile.FileName);
-            FileBackup.SaveAs(excelPath);
+            //string excelPath = Server.MapPath("~/Fuentes/temp/") + Path.GetFileName(FileBackup.PostedFile.FileName);
+            //FileBackup.SaveAs(excelPath);
 
+        }
+
+        protected void btnPrincipal_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("~/Inicio.aspx");
         }
     }
 }

@@ -39,8 +39,8 @@
 				<ul>
 					<li><a href="Trabajador.aspx">Trabajador</a></li>
 					<li><a href="Usuario.aspx">Usuarios</a></li>
-                    <li><a href="CopiaSeguriddad.aspx">Generar una copia de seguridad</a></li>
-                    <li><a href="RestaurarCopia">Restaurar copia de seguridad</a></li>
+                    <li><a href="CopiaSeguridad.aspx">Generar una copia de seguridad</a></li>
+                    <li><a href="RestaurarCopia.aspx">Restaurar copia de seguridad</a></li>
 				
 				</ul>
 			</li>
